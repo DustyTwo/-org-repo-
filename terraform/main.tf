@@ -44,4 +44,10 @@ resource "azurerm_app_service" "this" {
   site_config {
     linux_fx_version = "NODE|16-lts"
   }
+
+  source_control {
+    repo_url           = "https://github.com/DustyTwo/-org-repo-"
+    branch             = "main"
+  }
+
 }
